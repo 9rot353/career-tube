@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+body {
+  font-family: "Lato", serif;
+}
+
+header {
+  height: 60px;
+  border-bottom: 1px solid #e3e2e2;
+}
+
+.logo {
+  padding: 15px;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 120%;
+}
+
+.hidden {
+  display: none;
+}
+
+.search {
+  width: 100%;
+}
+
+.search input {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: none;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  padding: 5px 8px;
+  width: 100%;
+  height: 40px;
+}
+
+.search-button {
+  padding: 4px 8px;
+  height: 40px;
+  border-radius: 0px;
+  border: 0px;
+  outline: none;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 0px 15px;
+}
+
+.search > div {
+  padding: 0px;
+}
+
+.avatar {
+  max-width: 30px;
+}
+
+.avatar img {
+  border-radius: 100%;
+}
+
+.layout {
+  width: 100vw;
+}
+
+.nav {
+  border-right: 1px solid #e3e2e2;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  max-width: 250px;
+}
+
+.menu-item i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+section {
+  padding: 20px 0px;
+  border-bottom: 1px solid #e3e2e2;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  padding: 5px 15px;
+}
+
+.page {
+  padding: 0px;
+}
+
+.tags {
+  padding: 0px 15px;
+  border-bottom: 1px solid #e3e2e2;
+}
+
+.tags-content {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin: 10px 0px;
+}
+
+.tag.active {
+  background-color: black;
+  color: white;
+}
+
+.content {
+  background-color: #f9f9f9;
+}
+
+.videos {
+  width: 100%;
+  height: calcl(100vh - 120px);
+  overflow-y: auto;
+  padding: 20px 80px;
+}
+
+.video-container {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.video-content {
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.video {
+  width: 100%;
+  height: 200px;
+}
+
+.video img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.video-info {
+  margin-top: 10px;
+}
+
+.channel-avatar {
+  max-width: 40px;
+}
+
+.video-title {
+  font-size: 16px;
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.video-stats {
+  font-size: 14px;
+}
+
+.player {
+  padding: 30px;
+}
+
+.embed {
+  height: 300px;
+}
+
+@media screen and (min-width: 64em) {
+  .hidden {
+    display: block;
+  }
+  .embed {
+    height: 750px;
+  }
+}
